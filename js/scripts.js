@@ -4,12 +4,12 @@ $(document).ready(function(){
     var heightInput = parseInt($("input#height").val());
     var hairColorInput = $("select#hair-color").val();
 
-    if (heightInput > 60 && hairColorInput === 'black') {
-      $('.moth1').show(append());
+    if (hairColorInput === 'black' && heightInput > 60) {
+      $('.moth1').show().append();
     }else if (heightInput < 60 && hairColorInput === 'black'){
-      $('.moth2').show(append());
+      $('.moth2').show().append();
     }else {
-      $()
+      alert("NO MOTH FOR YOU");
     }
 
 
